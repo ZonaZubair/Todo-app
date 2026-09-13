@@ -1,8 +1,7 @@
-# 📝 Todo App
+# Todo App
 
 A simple todo app built with React to practice the core concepts: components, props, state, and effects.
 
-![JavaScript](https://img.shields.io/badge/React-blue) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ---
 

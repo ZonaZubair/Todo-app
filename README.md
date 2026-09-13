@@ -1,6 +1,6 @@
 # 📝 Todo App
 
-A simple todo app built with React to practice the core concepts — components, props, state, and effects.
+A simple todo app built with React to practice the core concepts: components, props, state, and effects.
 
 ![JavaScript](https://img.shields.io/badge/React-blue) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
@@ -36,13 +36,13 @@ npm install
 npm run dev
 ```
 
-Then open `http://localhost:5173` in your browser.
+Then open the given link in your browser.
 
 ---
 
 ## Deployed
 
-[Live Demo](https://your-vercel-link.vercel.app)
+[Live Demo](https://todo-app-ecru-omega.vercel.app/)
 
 ---
 

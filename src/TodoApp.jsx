@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-// -- TodoItem component: takes a single todo as prop and renders it
+// TodoItem component: taking a single todo as prop and renders it
 function TodoItem({ todo, onDelete, onToggle }) {
   return (
     <div
@@ -53,13 +53,13 @@ function TodoItem({ todo, onDelete, onToggle }) {
   );
 }
 
-// -- main app component
+// main app component
 export default function TodoApp() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
   const [filter, setFilter] = useState("all"); // all | active | done
 
-  // useEffect: update the page title based on remaining tasks
+  // useEffect: updating the page title based on remaining tasks
   useEffect(() => {
     const remaining = todos.filter((t) => !t.done).length;
     document.title = remaining > 0 ? `(${remaining}) My Todos` : "My Todos";

@@ -1,16 +1,59 @@
-# React + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple todo app built with React to practice the core concepts — components, props, state, and effects.
 
-Currently, two official plugins are available:
+![JavaScript](https://img.shields.io/badge/React-blue) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What it demonstrates
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Concept | Where it shows up |
+|---|---|
+| Functional Components | `TodoItem` is a separate component that takes props and renders one task |
+| Props | `todo`, `onDelete`, `onToggle` passed from parent to `TodoItem` |
+| useState | Manages the task list, input field value, and active filter tab |
+| useEffect | Updates browser tab title with remaining task count whenever todos change |
+| Conditional Rendering | Empty state, task count, strikethrough on done tasks |
+| List Rendering | `todos.map()` with `key={todo.id}` to render each task |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Add tasks by typing and pressing Enter or clicking Add
+- Mark tasks as done with a checkbox
+- Delete individual tasks
+- Filter by All / Active / Done
+- Tab title updates with remaining task count
+
+---
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+---
+
+## Deployed
+
+[Live Demo](https://your-vercel-link.vercel.app)
+
+---
+
+## Files
+
+```
+todo-app/
+├── src/
+│   ├── TodoApp.jsx
+│   ├── App.jsx
+│   └── index.css
+├── index.html
+└── package.json
+```
